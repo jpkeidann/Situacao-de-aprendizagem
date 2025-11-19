@@ -1,9 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/telegraf');
 @import url('https://fonts.cdnfonts.com/css/garet');
-@font-face {
-    font-family: 'Quicksand';
-    src: url('./Quicksand-VariableFont_wght.ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
 
 body{
     margin: 0;
@@ -106,12 +104,11 @@ main{
     font-family: Telegraf;
     font-weight: 500;
     margin: 0;
-
 }
 
-#BlocoDeDecoracao{
+.BlocoDeDecoracao{
     margin-left: 15vw;
-    margin-top: 5vh;
+    margin-top: 8vh;
     background: linear-gradient(to right,#d9e9cd,#49c7c7,#27b1bf);
     width: 80vw;
     height: 15vh;
@@ -128,4 +125,111 @@ main{
 
 #content{
     font-family: 'Quicksand' !important;
+}
+
+#DAMN{
+    width: 80vw;
+    height: 10vh;
+    position: absolute;
+    right: 5vw;
+    z-index: 1;
+}
+
+p{
+    font-family:Quicksand;
+    font-size: 23px;
+}
+
+#imgPagina{
+    width: 25vw;
+    height: 55vh;
+    position: absolute;
+    right: 5vw;
+    top: 70vh;
+    rotate: 45deg;
+}
+
+
+#imgPagina2{
+    width: 35vw;
+    height: 65vh;
+    position: absolute;
+    left: 0vw;
+    top: 95vh;
+}
+
+#imgPagina3{
+    z-index: -1;
+    width: 50vw;
+    height: 95vh;
+    position: absolute;
+    left: 0vw;
+    top: 133vh;
+}
+
+.titulos{
+    font-family:Montserrat;
+    font-weight: bold;
+    font-size: 4rem;
+    color: #018fa6;
+    margin-top: 25vh;
+    margin-left: 15vw;
+}
+
+.conteudo{
+    width: 40vw !important;
+    background: linear-gradient(to right,#d9e9cd,#49c7c7,#27b1bf);
+    border-radius: 30px;
+}
+
+#conteudo1{
+    margin-left: 37vw;
+}
+
+#imgPagina4{
+    margin-top: 5vh;
+    margin-left: 20vw;
+    width: 20vw;
+    height: 28vh;
+}
+
+#imgPagina5{
+    margin-top: 5vh;
+    margin-left: 2vw;
+    width: 20vw;
+    height: 28vh;
+}
+
+#imgPagina6{
+    width: 35vw;
+    height: 75vh;
+    position: absolute;
+    right: -3vw;
+    top: 95vh;
+    top: 210vh;
+    z-index: -1;
+}
+
+#conteudo2{
+    margin-left: 37vw;
+}
+
+#imgPagina7{
+    position: absolute;
+    top: 235vh;
+    left: 2vw;
+    width: 28vw;
+    height: 48vh;
+}
+
+.borderline{
+    border: 10px solid #27b1bf;
+    border-radius: 35px;
+}
+
+#imgPagina8{
+    position: absolute;
+    top: 305vh;
+    left: 0vw;
+    width: 70vw;
 }
