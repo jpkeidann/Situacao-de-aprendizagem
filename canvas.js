@@ -33,7 +33,6 @@ let colorArr = [
     '#ffffff'
 ]
 
-
 function Circle(x, y, dx, dy, radius) {
     this.x = x;
     this.y = y;
@@ -41,7 +40,7 @@ function Circle(x, y, dx, dy, radius) {
     this.dy = dy;
     this.radius = radius;
 
-    if (local === '/index.html') {
+    if (local === '/' || local === '/index.html') {
         this.color = colorArrIndex[Math.floor(Math.random() * colorArrIndex.length)]
     } else {
         this.color = colorArr[Math.floor(Math.random() * colorArr.length)]

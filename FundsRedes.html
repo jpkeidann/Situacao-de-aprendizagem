@@ -1,31 +1,279 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
-    <script src="./index.js"defer></script>
+    <script src="./index.js" defer></script>
+    <script src="./canvas.js" defer></script>
     <title>Situação de aprendizagem</title>
 </head>
 <body>
-    <div id="inicio">
-        <header>
-            <button onclick="redirecionar(0)">Home</button>
-            <button onclick="redirecionar(1)">Fundamentos de Eletroeletrônica:</button>
-            <button onclick="redirecionar(2)">Lógica Computacional:</button>
-            <button onclick="redirecionar(3)">Fundamentos de Banco de Dados:</button>
-            <button onclick="redirecionar(4)">Fundamentos de Redes:</button>
-            <button onclick="redirecionar(5)">Lógica de Programação:</button>
-            <button onclick="redirecionar(6)">Fundamentos de Tecnologia da Informação:</button>
-        </header>
-        <h1>Fundamentos De Redes</h1>
-    </div>
+    <header>
+        <button onclick="redirecionar(0)">Home</button>
+        <button onclick="redirecionar(1)">Fundamentos de Eletroeletrônica:</button>
+        <button onclick="redirecionar(2)">Lógica Computacional:</button>
+        <button onclick="redirecionar(3)">Fundamentos de Banco de Dados:</button>
+        <button onclick="redirecionar(4)">Fundamentos de Redes:</button>
+        <button onclick="redirecionar(5)">Lógica de Programação:</button>
+        <button onclick="redirecionar(6)">Fundamentos de Tecnologia da Informação:</button>
+    </header>
     <main>
-        
-    </main>
-    <footer> 
+        <canvas id="canva"></canvas>
+        <h1 class="H1Paginas">Fundamentos de Redes:</h1>
+        <h1 id="SA">S.A</h1>
+        <div class="BlocoDeDecoracao"></div>
+        <p id="DAMN">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+            pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
+            tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia
+            integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia
+            nostra inceptos himenaeos.
+        </p>
+        <img id="imgPagina" src="./img/imgPaginas1.png" alt="">
+        <div id="content">
+            <section id="sec1">
+                <img id="imgPagina2" src="./img/imgPaginas2.png" alt=""><br>
+                <img id="imgPagina3" src="./img/imgPaginas3.png" alt=""><br>
+                <h1 class="titulos" id="title1">Redes de Computadores</h1>
+                <div class="conteudo" id="conteudo1">
+                    <p>Uma rede de computadores é um conjunto de dispositivos — computadores, smartphones, impressoras,
+                        servidores — conectados por meios físicos (cabos de cobre, fibra óptica) ou sem fio (Wi-Fi), de
+                        modo que possam trocar dados, compartilhar recursos e se comunicar.
+                        O principal objetivo de redes é permitir compartilhamento de informações e recursos, facilitar
+                        comunicação (e-mail, mensagens, arquivos), permitir uso de serviços remotos (servidores,
+                        armazenamento, web), e tornar possível o funcionamento de aplicações distribuídas.</p>
+                </div>
+                <img id="imgPagina4" class="borderline" src="img/imgPaginas29.png" alt="">
+            </section>
+            <section id="sec2">
+                <h1 class="titulos" id="title2">O que é uma Rede mínima?</h1>
+                <img id="imgPagina6" src="img/imgPaginas6.png" alt="">
+                <div class="conteudo" id="conteudo2">
+                    <p>Quando falamos em “rede mínima”, pode-se imaginar o caso mais simples de rede de computadores:
+                        pelo menos dois dispositivos interligados por algum meio de comunicação — um cabo, um enlace sem
+                        fio — capazes de trocar dados. Esse tipo de rede já permite compartilhamento direto entre os
+                        nós, mesmo sem uma infraestrutura complexa. Em sua forma básica, a rede mínima basta para que
+                        dois computadores conversem, troquem arquivos ou compartilhem recursos.</p>
+                </div>
+                <img id="imgPagina7" class="borderline" src="img/imgPaginas30.png" alt="">
+            </section>
+            <section id="sec3">
+                <img id="imgPagina8" src="img/imgPaginas8.png" alt="">
+                <h1 class="titulos" id="title3">O que é a internet?</h1>
+                <div class="conteudo" id="conteudo3">
+                    <p>A Internet é, em essência, a maior rede de computadores do mundo — é a interconexão de milhares
+                        ou milhões de redes menores (redes domésticas, LANs, redes de provedores, data centers),
+                        formando um sistema global que permite a comunicação entre praticamente qualquer ponto do
+                        planeta.
+                        O que compõe a internet inclui infraestrutura física (cabos de cobre, cabos de fibra óptica,
+                        links submarinos entre continentes), equipamentos de rede (roteadores, switches, modems,
+                        servidores), protocolos que padronizam a comunicação, e serviços/applicações como web, e-mail,
+                        streaming, etc.</p>
+                </div>
+                <img id="imgPagina9" src="img/imgPaginas9.png" alt="">
+                <img id="imgPagina10" class="borderline" src="img/imgPaginas31.png" alt="">
+                <img id="imgPagina11" src="img/imgPaginas11.png" alt="">
+            </section>
+            <section id="sec4">
+                <h1 class="titulos" id="title4">O que é web?</h1>
+                <div class="conteudo" id="conteudo4">
+                    <p>A World Wide Web (web) é o conjunto de conteúdos, páginas, serviços e protocolos que rodamos
+                        sobre a infraestrutura da Internet — ou seja, a web é “o que vemos” da Internet. Por meio da
+                        web, acessamos sites, páginas, aplicações web, documentos, multimídia, etc. A web depende da
+                        rede global da Internet, mas não é sinônimo dela: a Internet é a infraestrutura; a web é uma
+                        cam­ada de serviços sobre essa infraestrutura.</p>
+                </div>
+                <img id="imgPagina12" class="borderline" src="img/imgPaginas32.png" alt="">
+                <img id="imgPagina13" src="img/imgPaginas13.png" alt="">
+            </section>
+            <section id="sec5">
+                <img id="imgPagina2-2" src="./img/imgPaginas2.png" alt=""><br>
+                <img id="imgPagina3-2" src="./img/imgPaginas3.png" alt=""><br>
+                <h1 class="titulos" id="title1">Mapa de fibra óptica.</h1>
+                <div class="conteudo" id="conteudo1">
+                    <p>Um mapa de fibra óptica global — ou especificamente de cabos submarinos e enlaces terrestres de
+                        backbone — mostra a espinha dorsal da Internet: os cabos de fibra óptica que atravessam oceanos
+                        e ligam continentes, interligando países e provendo a conectividade global. Esses cabos são a
+                        base física que torna possível a Internet mundial.</p>
+                </div>
+                <img id="imgPagina4" class="borderline" src="img/imgPaginas33.png" alt="">
+            </section>
+            <section id="sec6">
+                <img id="imgPagina6" src="img/imgPaginas6.png" alt="">
+                <h1 class="titulos" id="title2">Componentes de uma rede wi-fi</h1>
+                <div class="conteudo" id="conteudo2">
+                    <p>Para montar uma rede Wi-Fi, são necessários componentes de hardware como:
+                        Uma placa de rede sem fio (NIC wireless), para o computador/dispositivo poder se conectar via
+                        rádio.
+                        Um roteador Wi-Fi ou um ponto de acesso (access point), que emite o sinal sem fio e gerencia a
+                        conexão dos dispositivos.
+                        Outras peças auxiliares podem incluir antenas, repetidores/ extensores ou adaptadores USB de
+                        Wi-Fi caso o computador não tenha Wi-Fi embutido.
+                        Esses componentes juntos formam a infraestrutura que permite comunicação sem fio dentro da rede,
+                        compartilhamento de internet, arquivos, recursos, etc.</p>
+                </div>
+                <img id="imgPagina7" class="borderline" src="img/imgPaginas34.png" alt="">
+            </section>
+            <section id="sec7">
+                <img id="imgPagina8" src="img/imgPaginas8.png" alt="">
+                <h1 class="titulos" id="title7">Componentes de uma rede local com cabo de rede</h1>
+                <div class="conteudo" id="conteudo3">
+                    <p>Já para uma rede local cabeada (LAN), os componentes típicos são:
+                        Placas de rede Ethernet (NICs) nos computadores/dispositivos — para conectar via cabo.
+                        Cabos de rede (Ethernet), como cabos UTP (Cat5e, Cat6, etc) ou cabos de fibra em redes mais
+                        robustas.
+                        Dispositivos de interconexão como switches (comutadores), que conectam múltiplos dispositivos
+                        dentro da rede local e encaminham pacotes de forma eficiente.
+                        Painéis de conexão (patch panels), racks, conectores RJ45 — componentes típicos de cabeamento
+                        estruturado — quando a rede é mais organizada.</p>
+                </div>
+                <img id="imgPagina9-2" src="img/imgPaginas9.png" alt="">
+                <img id="imgPagina10" class="borderline" src="img/imgPaginas35.png" alt="">
+                <img id="imgPagina11" src="img/imgPaginas11.png" alt="">
+            </section>
+            <section id="sec8">
+                <h1 class="titulos" id="title4">Protocolo de comunicação</h1>
+                <div class="conteudo" id="conteudo4">
+                    <p>Um protocolo de comunicação em redes de computadores é um conjunto de regras e convenções que
+                        definem como os dados devem ser estruturados, transmitidos, recebidos e interpretados entre
+                        dispositivos diferentes. Isso inclui como os dados são divididos em pacotes, como os pacotes são
+                        endereçados, como erros são detectados e corrigidos, como os dispositivos sincronizam o
+                        envio/recebimento, entre outros aspectos.
+                        Por exemplo, na pilha de protocolos moderna, temos protocolos que cuidam do transporte confiável
+                        (como TCP), endereçamento e roteamento (como IP), e protocolos de aplicação para serviços como
+                        web, e-mail, transferência de arquivos, entre outros.
+                        Sem protocolos, dispositivos de diferentes fabricantes ou sistemas operacionais teriam
+                        dificuldade de “entender” uns aos outros — os protocolos garantem interoperabilidade.</p>
+                </div>
+                <img id="imgPagina12" class="borderline" src="img/imgPaginas36.png" alt="">
+                <img id="imgPagina13" src="img/imgPaginas13.png" alt="">
+            </section>
+            <section id="sec9">
+                <img id="imgPagina2-2" src="./img/imgPaginas2.png" alt=""><br>
+                <img id="imgPagina3-2" src="./img/imgPaginas3.png" alt=""><br>
+                <h1 class="titulos" id="title1">Modelo OSI</h1>
+                <div class="conteudo" id="conteudo1">
+                    <p>O modelo Modelo OSI (Open Systems Interconnection) é um padrão de referência teórico que divide a
+                        comunicação em redes em sete camadas, cada uma com funções específicas: física, enlace de dados,
+                        rede, transporte, sessão, apresentação e aplicação.
+                        A ideia do modelo OSI é padronizar a forma como sistemas diferentes se comunicam, definindo
+                        responsabilidade de cada camada: da transmissão física de bits até semântica dos dados,
+                        formatos, encriptação, confiabilidade, interface com aplicações de usuário.
+                        Embora o modelo OSI seja mais conceitual e raramente implementado literalmente em pilhas de rede
+                        modernas, ele é muito útil didaticamente para compreender, projetar e diagnosticar redes.</p>
+                </div>
+                <img id="imgPagina4" class="borderline" src="img/imgPaginas37.png" alt="">
+            </section>
+            <section id="sec10">
+                <img id="imgPagina6" src="img/imgPaginas6.png" alt="">
+                <h1 class="titulos" id="title2">Modelo TCP/IP</h1>
+                <div class="conteudo" id="conteudo2">
+                    <p>O Modelo TCP/IP é o conjunto de protocolos usados na prática na Internet e em grande parte das
+                        redes modernas. Ele organiza a comunicação em quatro camadas: Application (Aplicação), Transport
+                        (Transporte), Internet (Rede/Inter-Rede) e Network Access (Acesso à Rede / Física/Enlace).
+                        Enquanto o OSI é um modelo de referência, o TCP/IP é amplamente implementado. A camada
+                        Application lida com serviços como web, e-mail, transferência de arquivos; a camada Transport
+                        assegura entrega confiável ou rápida (TCP ou UDP); a camada Internet trata endereçamento e
+                        roteamento (via IP); e a camada de Acesso à Rede cuida da transmissão física dos dados
+                        (Ethernet, Wi-Fi, etc).
+                        Esse modelo é a base técnica da Internet que usamos hoje, robusto, padronizado e compatível
+                        globalmente.</p>
+                </div>
+                <img id="imgPagina7" class="borderline" src="img/imgPaginas38.png" alt="">
+            </section>
+            <section id="sec11">
+                <img id="imgPagina8" src="img/imgPaginas8.png" alt="">
+                <h1 class="titulos" id="title7">Protocolo IP V4 e o IP V6</h1>
+                <div class="conteudo" id="conteudo3">
+                    <p>O IPv4 (Internet Protocol version 4) é a versão antiga e mais difundida do protocolo de
+                        endereçamento e roteamento da Internet. Ele usa endereços de 32 bits, o que permite cerca de 4,3
+                        bilhões de endereços únicos — o que se tornou insuficiente diante da expansão global da
+                        Internet.
+                        Para resolver o problema da escassez de endereços e trazer melhorias, foi criado o IPv6 — a
+                        versão mais recente do protocolo IP — que usa endereços de 128 bits, oferecendo um espaço de
+                        endereçamento vastamente superior e outros benefícios como roteamento mais eficiente e suporte a
+                        novos tipos de serviços.
 
+                        Ambos os protocolos fazem parte do conjunto de protocolos usados na Internet, proporcionando
+                        identificação, endereçamento e roteamento de pacotes entre dispositivos, porém o IPv6 vem
+                        gradualmente substituindo o IPv4 conforme a necessidade de mais endereços cresce.</p>
+                </div>
+                <img id="imgPagina9-2" src="img/imgPaginas9.png" alt="">
+                <img id="imgPagina10" class="borderline" src="img/imgPaginas39.png" alt="">
+                <img id="imgPagina11" src="img/imgPaginas11.png" alt="">
+            </section>
+            <section id="sec12">
+                <h1 class="titulos" id="title4">Configuração IP e o TCP em uma programação backend com node.js</h1>
+                <div class="conteudo" id="conteudo4">
+                    <p>Em uma programação backend com Node.js, configurar “IP e TCP” normalmente significa criar um
+                        servidor que escuta requisições através de um endereço IP e porta TCP — comportando comunicação
+                        via TCP/IP como base para protocolos de mais alto nível (HTTP, WebSocket, etc.).
+                        Por exemplo, usando Node.js você pode configurar um servidor HTTP simples, que internamente
+                        utiliza a pilha TCP/IP para transmitir dados sobre a rede. O desenvolvedor geralmente não
+                        manipula diretamente aspectos de “camada de rede” (endereçamento, roteamento) — isso fica a
+                        cargo do sistema operacional e da infraestrutura da rede — mas define portas, permite conexões
+                        entrantes, define quais serviços estarão acessíveis.
+                        Assim, ao programar backend, você interage com a camada de aplicação, mas infrasestras das
+                        camadas Internet/Transporte já estão ativas e gerenciando o tráfego.</p>
+                </div>
+                <img id="imgPagina12" class="borderline" src="img/imgPaginas40.png" alt="">
+                <img id="imgPagina13" src="img/imgPaginas13.png" alt="">
+            </section>
+            <section id="sec13">
+                <img id="imgPagina2-2" src="./img/imgPaginas2.png" alt=""><br>
+                <img id="imgPagina3-2" src="./img/imgPaginas3.png" alt=""><br>
+                <h1 class="titulos" id="title1">Protocolo HTTP</h1>
+                <div class="conteudo" id="conteudo1">
+                    <p>O HTTP (HyperText Transfer Protocol) é o protocolo que define como os dados devem ser
+                        transmitidos na Web — é o padrão de comunicação entre navegadores (clientes) e servidores web.
+                        Ele especifica como as requisições (GET, POST, etc.) são feitas, como as respostas são
+                        formatadas, como os dados são estruturados e transferidos, permitindo a exibição de páginas,
+                        carregamento de recursos, envio de formulários, APIs, etc.
+                        Basicamente, sempre que você digita um endereço no navegador (URL) e pressiona Enter, seu
+                        navegador faz uma requisição HTTP ao servidor que hospeda o site, que responde com o conteúdo a
+                        ser exibido — texto, imagens, scripts, etc.</p>
+                    </div>
+                    <img id="imgPagina4" class="borderline" src="img/imgPaginas41.png" alt="">
+            </section>
+            <section id="sec14">
+                <img id="imgPagina6" src="img/imgPaginas6.png" alt="">
+                <h1 class="titulos" id="title2">HTTPS</h1>
+                <div class="conteudo" id="conteudo2">
+                    <p>HTTPS é a versão segura do HTTP — ou seja, HTTP sobre criptografia, normalmente usando SSL/TLS.
+                        Através do HTTPS, a comunicação entre cliente e servidor é criptografada, garantindo
+                        confidencialidade, integridade e autenticidade dos dados trocados. Isso protege contra
+                        interceptações, espionagem e modificações maliciosas.
+                        Ao usar HTTPS, o navegador indica que a conexão é segura (cadeado, “https://” na URL), e os
+                        dados trafegam de forma protegida. Em praticamente todos os sites hoje que lidam com dados
+                        sensíveis (login, senhas, formulários, transações), o HTTPS é obrigatório para segurança.</p>
+                </div>
+                <img id="imgPagina7" class="borderline" src="img/imgPaginas42.png" alt="">
+            </section>
+            <section id="sec15">
+                <img id="imgPagina8" src="img/imgPaginas8.png" alt="">
+                <h1 class="titulos" id="title7">Cite exemplo de um framework para programação do protocolo HTTP com uso
+                    do node.js</h1>
+                <div class="conteudo" id="conteudo3">
+                    <p>placeholder</p>
+                    <img src="data:image/jpeg;base64,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"
+                        alt="">
+                </div>
+                <img id="imgPagina11" src="img/imgPaginas11.png" alt="">
+            </section>
+            <section id="sec16">
+                <h1 class="titulos" id="title4">porcaria inutil</h1>
+                <div class="conteudo" id="conteudo4">
+                    <p>merda q o prof falo pra eu faze .</p>
+                </div>
+                <img id="imgPagina12" class="borderline" src="img/imgPaginas40.png" alt="">
+                <img id="imgPagina13" src="img/imgPaginas13.png" alt="">
+            </section>
+        </div>
+    </main>
+    <footer>
     </footer>
 </body>
+
 </html>

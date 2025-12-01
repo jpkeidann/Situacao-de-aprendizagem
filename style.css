@@ -14,25 +14,26 @@ body {
 
 #inicio {
     text-align: center;
+    min-height: 160vh;
 }
 
 #canvasInicial {
     background: linear-gradient(to bottom, #002d3f, #00425c, #015d81);
     position: fixed;
-    top: 0;         
-    left: 0; 
+    top: 0;
+    left: 0;
     z-index: -1;
     height: 100vh;
 }
 
-#canva{
-    position: fixed; 
-    top: 0;          
-    left: 0;   
+#canva {
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: -1;
 }
 
-#tituloIndex{
+#tituloIndex {
     margin-top: 20vh;
 }
 
@@ -151,7 +152,7 @@ main {
     font-family: 'Quicksand' !important;
 }
 
-#DAMN{
+#DAMN {
     width: 80vw;
     height: 10vh;
     position: absolute;
@@ -159,9 +160,8 @@ main {
     z-index: 1;
 }
 
-p{
+p {
     font-family: Quicksand;
-    font-size: 23px;
 }
 
 #imgPagina {
@@ -173,10 +173,30 @@ p{
     rotate: 45deg;
 }
 
+.conteudo {
+    margin-top: 30px;
+    background: #202020;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+.borderline {
+    border: 20px solid #202020;
+    border-radius: 25px;
+}
+
+
 /*--------------------------------- Section 1 -------------------------------------*/
 
-#imgPagina2 {
+#title1 {
+    position: relative;
+    margin-top: 25vh;
+    left: 14vw;
+}
 
+#imgPagina2 {
     width: 35vw;
     height: 65vh;
     position: absolute;
@@ -196,18 +216,10 @@ p{
 .titulos {
     font-family: Montserrat;
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #018fa6;
-    margin-top: 25vh;
-    margin-left: 20vw;
 }
 
-.conteudo {
-    margin-top: 30px;
-    background: #202020;
-    border-radius: 30px;
-    padding: 20px;
-}
 
 #conteudo1 {
     margin-left: 37vw;
@@ -216,51 +228,52 @@ p{
 
 #imgPagina4 {
     margin-top: 5vh;
-    margin-left: 20vw;
-    width: 20vw;
-    height: 28vh;
+    margin-left: 28vw;
+    width: 30vw;
+    height: 40vh;
 }
 
 #imgPagina5 {
     margin-top: 5vh;
-    margin-left: 2vw;
-    width: 20vw;
-    height: 28vh;
+    margin-left: 1vw;
+    width: 30vw;
+    height: 40vh;
 }
 
 
 /*--------------------------------- Section 2 -------------------------------------*/
 
-#conteudo2 {
-    margin-left: 35vw;
-    width: 600px;
-}
-
-#imgPagina7 {
-    position: relative;
-    top: -90vh;
-    left: -15vw;
-    width: 28vw;
-    height: 48vh;
-}
-
-.borderline {
-    border: 10px solid #27b1bf;
-    border-radius: 35px;
-}
-
 #sec2 {
     position: relative;
-    margin-top: 30vh;
+    top: 20vh;
     height: 70vh;
 }
 
 #imgPagina6 {
     width: 35vw;
     height: 75vh;
-    position: relative;
-    right: -18vw;
+    position: absolute;
+    top: -38vh;
+    right: -10vw;
     z-index: -1;
+}
+
+#title2 {
+    margin-top: 50vh;
+    margin-right: 95vh;
+}
+
+#conteudo2 {
+    margin-left: 5vw;
+    width: 480px;
+}
+
+#imgPagina7 {
+    position: relative;
+    top: -60vh;
+    right: -20vw;
+    width: 28vw;
+    height: 48vh;
 }
 
 #imgPagina8 {
@@ -271,17 +284,17 @@ p{
 
 /*--------------------------------- Section 3 -------------------------------------*/
 
-#sec3{
+#sec3 {
     position: relative;
-    margin-top: 100vh;
+    margin-top: 30vh;
 }
 
 #conteudo3 {
-    margin-left: 4vw;
-    width: 600px;
+    margin-left: 6vw;
+    width: 500px;
 }
 
-#arduino{
+#title3 {
     display: flex;
     flex-direction: row;
     margin-top: 10vh;
@@ -289,15 +302,15 @@ p{
     margin-left: 11vw !important;
 }
 
-#imgPagina9{
+#imgPagina9 {
     position: absolute;
-    top: 85vh;
+    top: 65vh;
     right: 1vw;
     width: 50vw;
     height: 90vh;
 }
 
-#imgPagina10{
+#imgPagina10 {
     position: relative;
     bottom: 70vh;
     left: 25vw;
@@ -305,7 +318,14 @@ p{
     height: 40vh;
 }
 
-#imgPagina11{
+/* --------------------------------- Section 4 ---------------------------------------------*/
+
+#sec4 {
+    margin-top: 20vh;
+    height: 70vh;
+}
+
+#imgPagina11 {
     position: absolute;
     left: -0.1vw;
     margin-top: 10vh;
@@ -313,62 +333,158 @@ p{
     height: 80vh;
 }
 
-/* --------------------------------- Section 4 ---------------------------------------------*/
-
-#conteudo4{
+#conteudo4 {
     position: relative;
-    left: 40vw;
-    width: 700px;
-}
-
-#CF{
-    margin-top: 5vh;
-    font-size: 350%;
-}
-
-#imgPagina12{
-    position: relative;
+    top: -40vh;
     left: 30vw;
+    width: 600px;
+}
+
+#title4 {
+    position: relative;
+    top: -40vh;
+    left: 4vw;
+    font-size: 300%;
+}
+
+#imgPagina12 {
+    position: relative;
+    top: -40vh;
+    left: 50vw;
     width: 30vw;
     height: 40vh;
-    margin-bottom: 20vh;
 }
 
-#imgPagina13{
-    position: absolute;
+#imgPagina13 {
+    position: relative;
+    bottom: 45vh;
     width: 45vw;
     height: 55vh;
     right: 40vw;
 }
 
 /* -------------------------------------------------- section 5 -------------------------------------------------------*/
-#sec5{
+
+#sec5 {
+    position: relative;
     margin-top: 20vh;
 }
 
-#imgPagina2-2{
+#imgPagina2-2 {
     width: 35vw;
     height: 65vh;
     position: absolute;
     left: 0vw;
-    top: 815vh;
+    top: 15vh;
 }
 
-#imgPagina3-2{
+#imgPagina3-2 {
     z-index: -1;
     width: 40vw;
-    height: 95vh;
+    height: 145vh;
     position: absolute;
     left: 0vw;
-    top: 853vh;
+    top: 43vh;
 }
 
-#imgPagina9-2{
+
+/* --------------------------------------- section 6 -------------------------------------------------- */
+
+#sec6 {
+    position: relative;
+    margin-top: 20vh;
+    height: 100vh;
+}
+
+/* --------------------------------------- section 7 --------------------------------------------------- */
+
+#sec7 {
+    position: relative;
+    margin-top: 20vh;
+}
+
+#imgPagina9-2 {
     position: absolute;
-    top: 1175vh;
-    right: 8vw;
+    top: 50vh;
+    right: 1vw;
     width: 50vw;
     height: 90vh;
 }
 
-/* --------------------------------------- section 6 -------------------------------------------------- */
+#title7 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+    font-size: 300%;
+    margin-left: 1vw !important;
+}
+
+/* --------------------------------------- section 8 --------------------------------------------------- */
+
+#sec8 {
+    position: relative;
+    margin-top: 20vh;
+    height: 40vh;
+}
+
+/* --------------------------------------- section 9 --------------------------------------------------- */
+
+#sec9 {
+    position: relative;
+    margin-top: 20vh;
+    height: 140vh;
+}
+
+/* --------------------------------------- section 10 --------------------------------------------------- */
+
+#sec10 {
+    position: relative;
+    margin-top: 20vh;
+    height: 100vh;
+}
+
+/* --------------------------------------- section 11 --------------------------------------------------- */
+
+#sec11 {
+    position: relative;
+    margin-top: 20vh;
+}
+
+/* --------------------------------------- section 12 --------------------------------------------------- */
+
+#sec12 {
+    position: relative;
+    margin-top: 20vh;
+    height: 140vh;
+}
+
+/* --------------------------------------- section 13 --------------------------------------------------- */
+
+#sec13 {
+    position: relative;
+    margin-top: 20vh;
+    height: 100vh;
+}
+
+/* --------------------------------------- section 14 --------------------------------------------------- */
+
+#sec14 {
+    position: relative;
+    margin-top: 20vh;
+}
+
+/* --------------------------------------- section 15 --------------------------------------------------- */
+
+#sec15 {
+    position: relative;
+    margin-top: 20vh;
+    height: 40vh;
+}
+
+/* --------------------------------------- section 15 --------------------------------------------------- */
+
+#sec16 {
+    position: relative;
+    margin-top: 200vh;
+    height: 140vh;
+}
