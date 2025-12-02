@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
-    <script src="./index.js"defer></script>
-    <title>Situação de aprendizagem</title>
+    <link rel="shortcut icon" href="./img/jcorp.png" type="image/x-icon">
+    <script src="./index.js" defer></script>
+    <script src="./canvas.js" defer></script>
+    <title>Jonas Corporation</title>
 </head>
+
 <body>
     <div id="inicio">
         <header>
@@ -19,12 +22,13 @@
             <button onclick="redirecionar(5)">Lógica de Programação:</button>
             <button onclick="redirecionar(6)">Fundamentos de Tecnologia da Informação:</button>
         </header>
-        <img id="imgDecoracao1" src="./img/imgDecoracao1.png" class="imagemIndex">
-        <h1>Situação de</h1>
-        <h1>Aprendizagem</h1>
+        <canvas id="canvasInicial"></canvas>
+        <div id="tituloIndex">
+            <img src="img/jcorp.png" alt="">
+            <h1>Jonas</h1>
+            <h1>Corporation</h1>
+        </div>
         <button id="iniciar">iniciar</button>
-        <img id="imgDecoracao2" src="./img/imgDecoracao2.png" class="imagemIndex">
-        <img id="imgDecoracao3" src="./img/imgDecoracao3.png" class="imagemIndex">
     </div>
     <main>
         <div id="sobre mim">
@@ -37,7 +41,7 @@
 
         </div>
     </main>
-    <footer> 
+    <footer>
 
     </footer>
 </body>

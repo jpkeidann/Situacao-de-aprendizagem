@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
-    <script src="./index.js"defer></script>
-    <title>Situação de aprendizagem</title>
+    <link rel="shortcut icon" href="./img/jcorp.png" type="image/x-icon">
+    <script src="./index.js" defer></script>
+    <script src="./canvas.js" defer></script>
+    <title>Jonas Corporation</title>
 </head>
+
 <body>
     <div id="inicio">
         <header>
@@ -19,13 +22,149 @@
             <button onclick="redirecionar(5)">Lógica de Programação:</button>
             <button onclick="redirecionar(6)">Fundamentos de Tecnologia da Informação:</button>
         </header>
-        <h1>Fundamentos De Banco De Dados</h1>
-    </div>
-    <main>
-        
-    </main>
-    <footer> 
-
-    </footer>
+        <main>
+            <canvas id="canva"></canvas>
+            <h1 class="H1Paginas">Fundamentos de Banco de Dados:</h1>
+            <h1 id="SA">S.A</h1>
+            <div class="BlocoDeDecoracao"></div>
+            <p id="DAMN">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam
+                urna
+                tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada
+                lacinia
+                integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per
+                conubia
+                nostra inceptos himenaeos.
+            </p>
+            <img id="imgPagina" src="./img/imgPaginas1.png" alt="">
+            <div id="content">
+                <section id="sec1">
+                    <img id="imgPagina2" src="./img/imgPaginas2.png" alt=""><br>
+                    <img id="imgPagina3" src="./img/imgPaginas3.png" alt=""><br>
+                    <h1 class="titulos" id="title1">Oquê é um SGBD?</h1>
+                    <div class="conteudo" id="conteudo1">
+                        <p>Quando falamos em banco de dados, um conceito central é o de SGBD — Sistema Gerenciador de
+                            Banco de Dados. Esse sistema é um software de uso geral que facilita a definição,
+                            construção, manipulação e o compartilhamento de bases de dados entre vários usuários e
+                            aplicações.
+                            Ele remove da aplicação a responsabilidade de gerenciar fisicamente os arquivos de dados, de
+                            modo que os dados fiquem organizados de forma padronizada (tabelas, esquemas, restrições,
+                            integridade etc.), facilitando o armazenamento, consulta, atualização e persistência. Em
+                            termos práticos, o SGBD dá suporte a sistemas de informação, sites, aplicações corporativas
+                            — ou seja, praticamente toda aplicação que precise guardar, buscar e manter consistência de
+                            dados.
+                            A utilidade de um SGBD se evidencia quando tratamos volumes grandes de informações,
+                            múltiplos acessos concorrentes, necessidade de segurança, integridade, recuperação de
+                            falhas, e acesso por diferentes programas ou usuários — funções quase impossíveis de serem
+                            bem implementadas de forma manual com arquivos comuns.</p>
+                    </div>
+                    <img id="imgPagina4" class="borderline" src="img/imgPaginas22.png" alt="">
+                </section>
+                <section id="sec2">
+                    <h1 class="titulos" id="title2">Principais Banco de Dados</h1>
+                    <img id="imgPagina6" src="img/imgPaginas6.png" alt="">
+                    <div class="conteudo" id="conteudo2">
+                        <p>Há diversos sistemas de banco de dados amplamente usados — cada um com suas características
+                            específicas. Por exemplo, MySQL é um SGBD muito popular que usa o modelo relacional e a
+                            linguagem SQL como interface, sendo usado em sites, aplicações web, serviços corporativos,
+                            etc.
+                            Outro exemplo de SGBD conhecido é PostgreSQL — um sistema de código-aberto, robusto, que
+                            suporta consultas complexas, integridade transacional, chaves estrangeiras, visões,
+                            gatilhos, e até extensões como PostGIS para dados georreferenciados.
+                            Além desses, há bancos NoSQL — sistemas que não se baseiam no modelo relacional tradicional
+                            e organizam dados por documentos, grafos, pares chave-valor etc. Esses bancos são úteis para
+                            cenários com dados não estruturados ou quando se busca maior escalabilidade horizontal.
+                            A escolha do banco de dados depende da necessidade do projeto: volume de dados, tipo de
+                            dados (estruturados ou não), demanda de consultas complexas, integridade e relacionamentos,
+                            ou necessidade de escalabilidade e flexibilidade.</p>
+                    </div>
+                    <img id="imgPagina7" class="borderline" src="img/imgPaginas23.png" alt="">
+                </section>
+                <section id="sec3">
+                    <img id="imgPagina8" src="img/imgPaginas8.png" alt="">
+                    <h1 class="titulos" id="title3">Dicionário de dados</h1>
+                    <div class="conteudo" id="conteudo3">
+                        <p>Dentro de um banco de dados, existe o conceito de dicionário de dados (data dictionary, em
+                            inglês) — que é um repositório de metadados ou “dados sobre os dados”. Ele contém descrições
+                            das estruturas do banco: tabelas, campos (atributos), tipos de dados, restrições, chaves,
+                            índices, relacionamentos, entre outros.
+                            O dicionário de dados é essencial porque define formalmente como as informações serão
+                            armazenadas e manipuladas, garantindo que todos os usuários e aplicações acessem os dados de
+                            forma padronizada e consistente. Ele também ajuda a manter a integridade e a coerência dos
+                            dados, e serve como referência para desenvolvedores e administradores do banco.</p>
+                    </div>
+                    <img id="imgPagina9" src="img/imgPaginas9.png" alt="">
+                    <img id="imgPagina10" class="borderline" src="img/imgPaginas24.png" alt="">
+                    <img id="imgPagina11" src="img/imgPaginas11.png" alt="">
+                </section>
+                <section id="sec4">
+                    <h1 class="titulos" id="title4">Modelagem de Banco de Dados</h1>
+                    <div class="conteudo" id="conteudo4">
+                        <p>Antes de implementar um banco de dados, geralmente realiza-se uma modelagem de banco de dados
+                            — processo de organizar e planejar as estruturas de dados com base nas necessidades do
+                            sistema: quais entidades (por exemplo “Usuário”, “Pedido”, “Produto”) existem, quais
+                            atributos essas entidades têm, e como elas se relacionam. O modelo mais usado para essa fase
+                            conceitual é o Modelo Entidade-Relacionamento (MER).
+                            O MER permite representar graficamente entidades, atributos e relacionamentos entre
+                            entidades — o que torna mais fácil visualizar a estrutura lógica dos dados antes de
+                            transformá-la em tabelas físicas. A partir do MER geramos o esquema lógico e,
+                            posteriormente, o esquema físico do banco, adaptado ao SGBD escolhido.</p>
+                    </div>
+                    <img id="imgPagina12" class="borderline" src="img/imgPaginas25.png" alt="">
+                    <img id="imgPagina13" src="img/imgPaginas13.png" alt="">
+                </section>
+                <section id="sec5">
+                    <img id="imgPagina2-2" src="./img/imgPaginas2.png" alt=""><br>
+                    <img id="imgPagina3-2" src="./img/imgPaginas3.png" alt=""><br>
+                    <h1 class="titulos" id="title1">Diagrama DER</h1>
+                    <div class="conteudo" id="conteudo1">
+                        <p>Um diagrama concretizando a modelagem com MER muitas vezes é chamado de DER (Diagrama
+                            Entidade-Relacionamento) — ele é a representação gráfica do modelo conceitual, mostrando
+                            entidades (como tabelas a serem criadas), seus atributos e os relacionamentos entre elas.
+                            Por exemplo, se estamos modelando um sistema de loja, poderíamos ter uma entidade “Cliente”
+                            com atributos como “id_cliente”, “nome”, “email”; outra entidade “Pedido” com “id_pedido”,
+                            “data”, “valor_total”; e um relacionamento entre Cliente e Pedido que indica que um cliente
+                            pode fazer vários pedidos. Esse relacionamento é representado graficamente com linhas/arcos
+                            e indicações de cardinalidade (por exemplo 1:N).
+                            Esse tipo de diagrama ajuda a garantir que o desenho do banco de dados reflita a realidade e
+                            os requisitos do sistema, e serve como base para a criação das tabelas e estruturas no SGBD.
+                        </p>
+                    </div>
+                    <img id="imgPagina4" class="borderline" src="img/imgPaginas26.png" alt="">
+                    <img id="imgPagina5" class="borderline" src="img/imgPaginas27.png" alt=""><br>
+                </section>
+                <section id="sec6">
+                    <img id="imgPagina6" src="img/imgPaginas6.png" alt="">
+                    <h1 class="titulos" id="title2">Diagrama MER</h1>
+                    <div class="conteudo" id="conteudo2">
+                        <p>Um diagrama concretizando a modelagem com MER muitas vezes é chamado de DER (Diagrama
+                            Entidade-Relacionamento) — ele é a representação gráfica do modelo conceitual, mostrando
+                            entidades (como tabelas a serem criadas), seus atributos e os relacionamentos entre elas.
+                            Por exemplo, se estamos modelando um sistema de loja, poderíamos ter uma entidade “Cliente”
+                            com atributos como “id_cliente”, “nome”, “email”; outra entidade “Pedido” com “id_pedido”,
+                            “data”, “valor_total”; e um relacionamento entre Cliente e Pedido que indica que um cliente
+                            pode fazer vários pedidos. Esse relacionamento é representado graficamente com linhas/arcos
+                            e indicações de cardinalidade (por exemplo 1:N).
+                            Esse tipo de diagrama ajuda a garantir que o desenho do banco de dados reflita a realidade e
+                            os requisitos do sistema, e serve como base para a criação das tabelas e estruturas no SGBD.
+                        </p>
+                    </div>
+                    <img id="imgPagina7" class="borderline" src="img/imgPaginas28.png" alt="">
+                </section>
+                <section id="sec7">
+                    <img id="imgPagina8" src="img/imgPaginas8.png" alt="">
+                    <h1 class="titulos" id="title7">Entradas e Saídas analógicas</h1>
+                    <div class="conteudo" id="conteudo3">
+                        <p>Digite as seguintes informações</p><br>
+                        <input type="text" id="usuario" placeholder="Usuario"><br>
+                        <input type="text" id="senha" placeholder="Senha"><br>
+                        <button onclick="login()"> Login </button><br>
+                        <div id="res"></div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+        </footer>
 </body>
 </html>

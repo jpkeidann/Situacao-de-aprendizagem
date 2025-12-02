@@ -3,69 +3,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
 
-body{
+body {
     margin: 0;
     padding: 0;
-    background-color: #f7f3cf;
+    background: #000000;
     overflow-x: hidden;
+    height: 100vh;
+    color: white;
 }
 
-#inicio{
+#inicio {
     text-align: center;
+    min-height: 160vh;
 }
 
+#canvasInicial {
+    background: linear-gradient(to bottom, #002d3f, #00425c, #015d81);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100vh;
+}
 
-header{
+#canva {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#tituloIndex {
+    margin-top: 20vh;
+}
+
+header {
     padding-bottom: 100px;
     padding-left: 25px;
     margin-bottom: 160px;
     height: 80px;
     background-color: #176585;
-    background: linear-gradient(to bottom ,#176585,#176585, #f7f3cf);
+    background: linear-gradient(to bottom, #176585, #176585, #002d3f);
     overflow-x: auto;
     overflow-y: hidden;
     text-align: left;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
-header button{
+header button {
     margin-top: 50px;
     margin-left: 5px;
     height: 40px;
     padding: 0 10px;
     border-radius: 50px;
-    background: linear-gradient(to right, #27b1bf,#2ecddf,#31dcef);
+    background: linear-gradient(to right, #27b1bf, #2ecddf, #31dcef);
     font-family: 'Garet';
     font-weight: 500;
     font-size: 1rem;
     border: none;
     cursor: pointer;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
-header button:hover{
+header button:hover {
     background-color: #1f8a95;
 }
 
-h1{
+h1 {
     font-size: 8rem;
     font-family: Telegraf;
     font-weight: 500;
     margin: 0;
 }
 
-.imagemIndex{
+.imagemIndex {
     position: absolute;
     z-index: -1;
 }
 
-#imgDecoracao1{
+#imgDecoracao1 {
     width: 40%;
     top: 25%;
     left: 30%;
 }
 
-#imgDecoracao2{
+#imgDecoracao2 {
     width: 25%;
     height: 45%;
     top: 80%;
@@ -73,7 +95,7 @@ h1{
     rotate: -65deg;
 }
 
-#imgDecoracao3{
+#imgDecoracao3 {
     width: 35vw;
     height: 60vh;
     top: 25%;
@@ -81,7 +103,7 @@ h1{
     rotate: -90deg;
 }
 
-#iniciar{
+#iniciar {
     background-color: black;
     color: white;
     font-size: 2rem;
@@ -91,13 +113,14 @@ h1{
 }
 
 
-main{
+main {
     text-align: center;
 }
 
 /*----------------------------------  Páginas:  --------------------------------------*/
 
-.H1Paginas{
+.H1Paginas {
+    color: #d9e9cd;
     margin-left: 15vw;
     width: 50vw;
     font-size: 6rem;
@@ -106,28 +129,30 @@ main{
     margin: 0;
 }
 
-.BlocoDeDecoracao{
+.BlocoDeDecoracao {
     margin-left: 15vw;
     margin-top: 8vh;
-    background: linear-gradient(to right,#d9e9cd,#49c7c7,#27b1bf);
+    background: linear-gradient(to right, #d9e9cd, #49c7c7, #27b1bf);
     width: 80vw;
     height: 15vh;
     border-radius: 30px;
 }
 
-#SA{
+#SA {
     position: absolute;
-    color:#27b1bf;
+    color: #27b1bf;
     font-weight: bold;
     top: 35vh;
     right: 20vw;
 }
 
-#content{
+#content {
+    margin-top: 20vh;
+    min-height: 100vh;
     font-family: 'Quicksand' !important;
 }
 
-#DAMN{
+#DAMN {
     width: 80vw;
     height: 10vh;
     position: absolute;
@@ -135,101 +160,349 @@ main{
     z-index: 1;
 }
 
-p{
-    font-family:Quicksand;
-    font-size: 23px;
+p {
+    font-family: Quicksand;
 }
 
-#imgPagina{
+#imgPagina {
     width: 25vw;
     height: 55vh;
     position: absolute;
     right: 5vw;
-    top: 70vh;
+    top: 90vh;
     rotate: 45deg;
 }
 
+.conteudo {
+    margin-top: 30px;
+    background: #202020;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 20px;
+}
 
-#imgPagina2{
+
+.borderline {
+    border: 20px solid #202020;
+    border-radius: 25px;
+}
+
+pre{
+    background-color: #000000;
+}
+
+/*--------------------------------- Section 1 -------------------------------------*/
+
+#title1 {
+    position: relative;
+    margin-top: 25vh;
+    left: 14vw;
+}
+
+#imgPagina2 {
     width: 35vw;
     height: 65vh;
     position: absolute;
     left: 0vw;
-    top: 95vh;
+    top: 165vh;
 }
 
-#imgPagina3{
+#imgPagina3 {
     z-index: -1;
-    width: 50vw;
-    height: 95vh;
+    width: 40vw;
+    height: 145vh;
     position: absolute;
     left: 0vw;
-    top: 133vh;
+    top: 203vh;
 }
 
-.titulos{
-    font-family:Montserrat;
+.titulos {
+    font-family: Montserrat;
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #018fa6;
-    margin-top: 25vh;
-    margin-left: 15vw;
 }
 
-.conteudo{
-    width: 40vw !important;
-    background: linear-gradient(to right,#d9e9cd,#49c7c7,#27b1bf);
-    border-radius: 30px;
-}
 
-#conteudo1{
+#conteudo1 {
     margin-left: 37vw;
+    width: 700px;
 }
 
-#imgPagina4{
+#imgPagina4 {
     margin-top: 5vh;
-    margin-left: 20vw;
-    width: 20vw;
-    height: 28vh;
+    margin-left: 28vw;
+    width: 30vw;
+    height: 40vh;
 }
 
-#imgPagina5{
+#imgPagina5 {
     margin-top: 5vh;
-    margin-left: 2vw;
-    width: 20vw;
-    height: 28vh;
+    margin-left: 1vw;
+    width: 30vw;
+    height: 40vh;
 }
 
-#imgPagina6{
+
+/*--------------------------------- Section 2 -------------------------------------*/
+
+#sec2 {
+    position: relative;
+    top: 20vh;
+    min-height: 70vh;
+}
+
+#imgPagina6 {
     width: 35vw;
     height: 75vh;
     position: absolute;
-    right: -3vw;
-    top: 95vh;
-    top: 210vh;
+    top: -38vh;
+    right: -10vw;
     z-index: -1;
 }
 
-#conteudo2{
-    margin-left: 37vw;
+#title2 {
+    margin-top: 50vh;
+    margin-right: 95vh;
 }
 
-#imgPagina7{
-    position: absolute;
-    top: 235vh;
-    left: 2vw;
+#conteudo2 {
+    margin-left: 5vw;
+    width: 480px;
+}
+
+#imgPagina7 {
+    position: relative;
+    top: -60vh;
+    right: -20vw;
     width: 28vw;
     height: 48vh;
 }
 
-.borderline{
-    border: 10px solid #27b1bf;
-    border-radius: 35px;
+#imgPagina8 {
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
 }
 
-#imgPagina8{
+/*--------------------------------- Section 3 -------------------------------------*/
+
+#sec3 {
+    position: relative;
+    margin-top: 30vh;
+}
+
+#conteudo3 {
+    margin-left: 6vw;
+    width: 500px;
+}
+
+#title3 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+    font-size: 600%;
+    margin-left: 11vw !important;
+}
+
+#imgPagina9 {
     position: absolute;
-    top: 305vh;
+    top: 65vh;
+    right: 1vw;
+    width: 50vw;
+    height: 90vh;
+}
+
+#imgPagina10 {
+    position: relative;
+    bottom: 70vh;
+    left: 25vw;
+    width: 30vw;
+    height: 40vh;
+}
+
+/* --------------------------------- Section 4 ---------------------------------------------*/
+
+#sec4 {
+    margin-top: 20vh;
+    min-height: 70vh;
+}
+
+#imgPagina11 {
+    position: absolute;
+    left: -0.1vw;
+    margin-top: 10vh;
+    width: 30vw;
+    height: 80vh;
+}
+
+#conteudo4 {
+    position: relative;
+    top: -40vh;
+    left: 30vw;
+    width: 600px;
+}
+
+#title4 {
+    position: relative;
+    top: -40vh;
+    left: 4vw;
+    font-size: 300%;
+}
+
+#imgPagina12 {
+    position: relative;
+    top: -40vh;
+    left: 50vw;
+    width: 30vw;
+    height: 40vh;
+}
+
+#imgPagina13 {
+    position: relative;
+    bottom: 45vh;
+    width: 45vw;
+    height: 55vh;
+    right: 40vw;
+}
+
+/* -------------------------------------------------- section 5 -------------------------------------------------------*/
+
+#sec5 {
+    position: relative;
+    margin-top: 20vh;
+}
+
+#imgPagina2-2 {
+    width: 35vw;
+    height: 65vh;
+    position: absolute;
     left: 0vw;
-    width: 70vw;
+    top: 15vh;
+}
+
+#imgPagina3-2 {
+    z-index: -1;
+    width: 40vw;
+    height: 145vh;
+    position: absolute;
+    left: 0vw;
+    top: 43vh;
+}
+
+
+/* --------------------------------------- section 6 -------------------------------------------------- */
+
+#sec6 {
+    position: relative;
+    margin-top: 20vh;
+    min-height: 100vh;
+}
+
+/* --------------------------------------- section 7 --------------------------------------------------- */
+
+#sec7 {
+    position: relative;
+    margin-top: 20vh;
+}
+
+#imgPagina9-2 {
+    position: absolute;
+    top: 50vh;
+    right: 1vw;
+    width: 50vw;
+    height: 90vh;
+}
+
+#title7 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+    font-size: 300%;
+    margin-left: 1vw !important;
+}
+
+/* --------------------------------------- section 8 --------------------------------------------------- */
+
+#sec8 {
+    position: relative;
+    margin-top: 20vh;
+    min-height: 40vh;
+}
+
+/* --------------------------------------- section 9 --------------------------------------------------- */
+
+#sec9 {
+    position: relative;
+    margin-top: 20vh;
+    min-height: 140vh;
+}
+
+/* --------------------------------------- section 10 --------------------------------------------------- */
+
+#sec10 {
+    position: relative;
+    margin-top: 20vh;
+    min-height: 100vh;
+}
+
+/* --------------------------------------- section 11 --------------------------------------------------- */
+
+#sec11 {
+    position: relative;
+    margin-top: 20vh;
+}
+
+/* --------------------------------------- section 12 --------------------------------------------------- */
+
+#sec12 {
+    position: relative;
+    margin-top: 20vh;
+    min-height: 140vh;
+}
+
+/* --------------------------------------- section 13 --------------------------------------------------- */
+
+#sec13 {
+    position: relative;
+    margin-top: 20vh;
+    min-height: 100vh;
+}
+
+/* --------------------------------------- section 14 --------------------------------------------------- */
+
+#sec14 {
+    position: relative;
+    margin-top: 20vh;
+}
+
+/* --------------------------------------- section 15 --------------------------------------------------- */
+
+#sec15 {
+    position: relative;
+    margin-top: 20vh;
+    min-height: 40vh;
+}
+
+/* --------------------------------------- section 15 --------------------------------------------------- */
+
+#sec16 {
+    position: relative;
+    margin-top: 200vh;
+    min-height: 140vh;
+}
+
+/* ----------------- eletroeletronica -------------------------*/
+
+    #conteudoCode {
+        margin-left: 5vw;
+        width: 80vw;
+        text-align: left;
+    }
+
+/* ----------------- Lógica de computação ------------------------- */
+
+#img{
+    width: 30vw;
+    height: 30vh;
 }

@@ -5,24 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/jcorp.png" type="image/x-icon">
     <script src="./index.js" defer></script>
-    <title>Situação de aprendizagem</title>
+    <script src="./canvas.js" defer></script>
+    <title>Jonas Corporation</title>
 </head>
 
 <body>
-    <div id="inicio">
-        <header>
-            <button onclick="redirecionar(0)">Home</button>
-            <button onclick="redirecionar(1)">Fundamentos de Eletroeletrônica:</button>
-            <button onclick="redirecionar(2)">Lógica Computacional:</button>
-            <button onclick="redirecionar(3)">Fundamentos de Banco de Dados:</button>
-            <button onclick="redirecionar(4)">Fundamentos de Redes:</button>
-            <button onclick="redirecionar(5)">Lógica de Programação:</button>
-            <button onclick="redirecionar(6)">Fundamentos de Tecnologia da Informação:</button>
-        </header>
-    </div>
+    <header>
+        <button onclick="redirecionar(0)">Home</button>
+        <button onclick="redirecionar(1)">Fundamentos de Eletroeletrônica:</button>
+        <button onclick="redirecionar(2)">Lógica Computacional:</button>
+        <button onclick="redirecionar(3)">Fundamentos de Banco de Dados:</button>
+        <button onclick="redirecionar(4)">Fundamentos de Redes:</button>
+        <button onclick="redirecionar(5)">Lógica de Programação:</button>
+        <button onclick="redirecionar(6)">Fundamentos de Tecnologia da Informação:</button>
+    </header>
     <main>
+        <canvas id="canva"></canvas>
         <h1 class="H1Paginas">Fundamentos De Eletroeletrônica:</h1>
         <h1 id="SA">S.A</h1>
         <div class="BlocoDeDecoracao"></div>
@@ -34,39 +34,296 @@
         </p>
         <img id="imgPagina" src="./img/imgPaginas1.png" alt="">
         <div id="content">
-            <img id="imgPagina2" src="./img/imgPaginas2.png" alt=""><br>
-            <img id="imgPagina3" src="./img/imgPaginas3.png" alt=""><br>
-            <h1 class="titulos">Componentes Eletrônicos</h1>
-            <div class="conteudo" id="conteudo1">
-                <p>Começando com os componentes eletrônicos empregados em serviços: o resistor, o diodo LED, o
-                    transistor e o circuito integrado (IC). O resistor é um componente que limita a corrente elétrica ou
-                    divide tensão em um circuito — sua resistência é medida em ohms. O diodo, por sua vez, permite a
-                    passagem de corrente em apenas um sentido, sendo essencial em retificadores ou para proteção contra
-                    polaridade reversa. O LED (Light Emitting Diode) é um tipo especial de diodo que emite luz quando
-                    polarizado corretamente. Já o transistor funciona como interruptor ou amplificador — com três
-                    terminais permite controlar uma corrente maior por meio de uma menor. Por fim, o circuito integrado
-                    reúne vários componentes (transistores, resistores, capacitores) em um único chip, realizando
-                    funções mais complexas de lógica ou processamento. O domínio destes quatro componentes básicos é
-                    fundamental para compreensão de praticamente qualquer sistema eletroeletrônico.</p>
-            </div>
-            <img id="imgPagina4" class="borderline" src="img/imgPaginas4.png" alt="">
-            <img id="imgPagina5" class="borderline" src="img/imgPaginas5.png" alt=""><br>
-            <img id="imgPagina6" src="img/imgPaginas6.png" alt="">
-            <h1 class="titulos">Sensores Empregados</h1>
-            <div class="conteudo" id="conteudo2">
-                <p>Em sistemas automatizados são empregados diversos sensores <br> — por exemplo sensores de temperatura, de
-                    umidade e de luminosidade. Sensores são dispositivos que medem alguma grandeza física ou química
-                    (como temperatura, vapor de água no ar, intensidade luminosa) e convertem essas informações em
-                    sinais elétricos que podem ser tratados por um controlador. Por exemplo, um sensor de temperatura
-                    vai medir o “calor” ou “frio” e gerar uma variação de tensão ou resistência. Um sensor de umidade
-                    mede a presença de vapor de água no ambiente e fornece uma saída proporcional. Um sensor de
-                    luminosidade (como um LDR ou fototransistor) responde à quantidade de luz e pode ser usado para
-                    ajustar iluminação automática ou monitoramento. No contexto de automação, esses sensores são “os
-                    olhos e ouvidos” do sistema — capturam dados do ambiente para que o sistema tome decisões, acione
-                    atuadores, alerte condições ou otimize processos.</p>
-            </div>
-            <img id="imgPagina7" class="borderline" src="img/imgPaginas7.png" alt="">
-            <img id="imgPagina8" src="img/imgPaginas8.png" alt="">
+            <section id="sec1">
+                <img id="imgPagina2" src="./img/imgPaginas2.png" alt=""><br>
+                <img id="imgPagina3" src="./img/imgPaginas3.png" alt=""><br>
+                <h1 class="titulos" id="title1">Componentes Eletrônicos</h1>
+                <div class="conteudo" id="conteudo1">
+                    <p>Começando com os componentes eletrônicos empregados em serviços: o resistor, o diodo LED, o
+                        transistor e o circuito integrado (IC). O resistor é um componente que limita a corrente
+                        elétrica ou
+                        divide tensão em um circuito — sua resistência é medida em ohms. O diodo, por sua vez, permite a
+                        passagem de corrente em apenas um sentido, sendo essencial em retificadores ou para proteção
+                        contra
+                        polaridade reversa. O LED (Light Emitting Diode) é um tipo especial de diodo que emite luz
+                        quando
+                        polarizado corretamente. Já o transistor funciona como interruptor ou amplificador — com três
+                        terminais permite controlar uma corrente maior por meio de uma menor. Por fim, o circuito
+                        integrado
+                        reúne vários componentes (transistores, resistores, capacitores) em um único chip, realizando
+                        funções mais complexas de lógica ou processamento. O domínio destes quatro componentes básicos é
+                        fundamental para compreensão de praticamente qualquer sistema eletroeletrônico.</p>
+                </div>
+                <img id="imgPagina4" class="borderline" src="img/imgPaginas4.png" alt="">
+                <img id="imgPagina5" class="borderline" src="img/imgPaginas5.png" alt=""><br>
+            </section>
+            <section id="sec2">
+                <h1 class="titulos" id="title2">Sensores Empregados</h1>
+                <img id="imgPagina6" src="img/imgPaginas6.png" alt="">
+                <div class="conteudo" id="conteudo2">
+                    <p>Em sistemas automatizados são empregados diversos sensores <br> — por exemplo sensores de
+                        temperatura, de
+                        umidade e de luminosidade. Sensores são dispositivos que medem alguma grandeza física ou química
+                        (como temperatura, vapor de água no ar, intensidade luminosa) e convertem essas informações em
+                        sinais elétricos que podem ser tratados por um controlador. Por exemplo, um sensor de
+                        temperatura
+                        vai medir o “calor” ou “frio” e gerar uma variação de tensão ou resistência. Um sensor de
+                        umidade
+                        mede a presença de vapor de água no ambiente e fornece uma saída proporcional. Um sensor de
+                        luminosidade (como um LDR ou fototransistor) responde à quantidade de luz e pode ser usado para
+                        ajustar iluminação automática ou monitoramento. No contexto de automação, esses sensores são “os
+                        olhos e ouvidos” do sistema — capturam dados do ambiente para que o sistema tome decisões,
+                        acione
+                        atuadores, alerte condições ou otimize processos.</p>
+                </div>
+                <img id="imgPagina7" class="borderline" src="img/imgPaginas7.png" alt="">
+            </section>
+            <section id="sec3">
+                <img id="imgPagina8" src="img/imgPaginas8.png" alt="">
+                <h1 class="titulos" id="title3">Arduino</h1>
+                <div class="conteudo" id="conteudo3">
+                    <p>Quando falamos sobre o Arduino, estamos falando de uma plataforma de hardware e software open
+                        source,
+                        composta por placas microcontroladoras, ambiente de desenvolvimento e uma comunidade muito
+                        ativa. O
+                        Arduino serve para prototipagem, ensino de eletrônica, automação, robótica, Internet das Coisas
+                        (IoT) e muitos outros campos. Suas aplicações podem variar desde um controle simples de LED até
+                        automação residencial, veículos autônomos, sensores conectados em rede, entre outros. As
+                        vantagens
+                        incluem fácil acesso, grande comunidade de usuários, diversas bibliotecas prontas, conectividade
+                        e
+                        custo relativamente baixo. As desvantagens podem envolver limitações de desempenho para usos
+                        industriais exigentes (velocidade, robustez, proteção EMI/EMC), limitação de recursos (memória,
+                        I/O)
+                        ou necessidade de adaptação para ambientes severos.</p>
+                </div>
+                <img id="imgPagina9" src="img/imgPaginas9.png" alt="">
+                <img id="imgPagina10" class="borderline" src="img/imgPaginas10.png" alt="">
+                <img id="imgPagina11" src="img/imgPaginas11.png" alt="">
+            </section>
+            <section id="sec4">
+                <h1 class="titulos" id="title4">Como o Arduíno funciona?</h1>
+                <div class="conteudo" id="conteudo4">
+                    <p>Para entender como o Arduino funciona, primeiro lembremos que ele incorpora um microcontrolador
+                        (por
+                        exemplo um ATmega328P em muitos modelos), que recebe um programa (sketch) carregado pelo
+                        usuário.
+                        Esse microcontrolador lê entradas (sensores, botões), processa dados segundo lógica definida e
+                        ativa
+                        saídas (LEDs, motores, relés) conforme programado. No hardware vemos alimentação,
+                        entradas/saídas
+                        digitais, entradas analógicas com conversor A/D, comunicação serial/USB etc. A “eletrônica
+                        embarcada” (embedded electronics) refere-se a sistemas de computador dedicados, incorporados
+                        dentro
+                        de outros dispositivos, que executam funções específicas com interface ao hardware — por exemplo
+                        um
+                        controlador de porta automática, um módulo de sensor ligado a atuadores, ou um dispositivo IoT
+                        com
+                        Arduino na base. Ou seja: ao usar Arduino para controlar algo dentro de um produto maior,
+                        estamos no
+                        âmbito da eletrônica embarcada.</p>
+                </div>
+                <img id="imgPagina12" class="borderline" src="img/imgPaginas12.png" alt="">
+                <img id="imgPagina13" src="img/imgPaginas13.png" alt="">
+            </section>
+            <section id="sec5">
+                <img id="imgPagina2-2" src="./img/imgPaginas2.png" alt=""><br>
+                <img id="imgPagina3-2" src="./img/imgPaginas3.png" alt=""><br>
+                <h1 class="titulos" id="title1">Linguagem usada</h1>
+                <div class="conteudo" id="conteudo1">
+                    <p>Quanto à linguagem de programação utilizada pelo Arduino, a principal é uma versão baseada em
+                        C/C++ (às vezes chamada de “linguagem Arduino”) por meio do Arduino IDE. Isso permite ao usuário
+                        escrever funções como setup() e loop(), configurar pinos, ler sensores, etc. Além disso, em
+                        placas compatíveis ou com bibliotecas adequadas pode-se usar Python (por exemplo com
+                        MicroPython) ou outras extensões, mas para a maioria dos projetos Arduino padrão utiliza-se
+                        C/C++. Assim, se você vai mostrar em seu portfólio, é correto afirmar que a linguagem é C++ (ou
+                        C derivado) e que esse é o ambiente mais usual.</p>
+                </div>
+                <img id="imgPagina4" class="borderline" src="img/imgPaginas14.png" alt="">
+                <img id="imgPagina5" class="borderline" src="img/imgPaginas15.png" alt=""><br>
+            </section>
+            <section id="sec6">
+                <img id="imgPagina6" src="img/imgPaginas6.png" alt="">
+                <h1 class="titulos" id="title2">Entradas e Saídas digitais</h1>
+                <div class="conteudo" id="conteudo2">
+                    <p>“Entradas e saídas digitais” em circuitos integrados como o Arduino dizem respeito a pinos que
+                        somente assumem dois estados lógicos: HIGH ou LOW (por exemplo 5 V ou 0 V). Uma entrada digital
+                        lê se um pino está em HIGH ou LOW — por exemplo para detectar se um botão está pressionado ou
+                        não. Uma saída digital coloca o pino em HIGH ou LOW — por exemplo para acionar um LED, um relé
+                        ou um motor (através de driver). No Arduino se configura o modo com pinMode(pin, INPUT) ou
+                        pinMode(pin, OUTPUT), então lê com digitalRead(pin) ou escreve com digitalWrite(pin, value).
+                        Esses pinos são ideais para lógica simples, ON/OFF, acionamentos e detecções binárias.</p>
+                </div>
+                <img id="imgPagina7" class="borderline" src="img/imgPaginas16.png" alt="">
+            </section>
+            <section id="sec7">
+                <img id="imgPagina8" src="img/imgPaginas8.png" alt="">
+                <h1 class="titulos" id="title7">Entradas e Saídas analógicas</h1>
+                <div class="conteudo" id="conteudo3">
+                    <p>Já as “entradas e saídas analógicas” em circuitos como o Arduino permitem lidar com sinais
+                        contínuos ou variáveis — e não apenas dois estados. Uma entrada analógica (analog input)
+                        converte uma tensão variável (por exemplo entre 0 V e 5 V) para um valor digital por meio de um
+                        conversor ADC (Analog-to-Digital Converter) — no Arduino típico esse valor vai de 0 a 1023 (10
+                        bits) para 0–5 V.
+                        Uma saída “analógica” pura nem sempre existe, mas o Arduino simula por PWM (analogWrite()) para
+                        controlar brilho, velocidade ou outras variáveis. Essas entradas/saídas permitem ler sensores
+                        com curva contínua (potenciômetros, sensores de luz, temperatura) ou controlar variáveis de
+                        forma mais fina do que apenas ON/OFF.</p>
+                </div>
+                <img id="imgPagina9-2" src="img/imgPaginas9.png" alt="">
+                <img id="imgPagina10" class="borderline" src="img/imgPaginas17.png" alt="">
+                <img id="imgPagina11" src="img/imgPaginas11.png" alt="">
+            </section>
+            <section id="sec8">
+                <h1 class="titulos" id="title4">Cálculo da tensão</h1>
+                <div class="conteudo" id="conteudo4">
+                    <label for="tensão">Digite aquí a Tensão:</label><br>
+                    <input type="text" name="tensão" id="tensao"><br><br>
+                    <label for="corrente">Digite aquí a Corrente:</label><br>
+                    <input type="text" name="corrente" id="corrente"><br><br>
+                    <label for="resistência">Digite aquí a Resistência:</label><br>
+                    <input type="text" name="resistência" id="resistencia"><br><br>
+                    <button onclick="LeiDeOhm()">Calcular</button><br>
+                    <div id="res"></div>
+                </div>
+            </section>
+            <section id="sec9">
+                <img id="imgPagina2-2" src="./img/imgPaginas2.png" alt=""><br>
+                <img id="imgPagina3-2" src="./img/imgPaginas3.png" alt=""><br>
+                <h1 class="titulos" id="title1">Cálculo da Potência</h1>
+                <div class="conteudo" id="conteudo1">
+                    <label for="tensão">Digite aquí a Tensão:</label><br>
+                    <input type="text" name="tensão" id="tensao2"><br><br>
+                    <label for="corrente">Digite aquí a Corrente:</label><br>
+                    <input type="text" name="corrente" id="corrente2"><br><br>
+                    <label for="resistência">Digite aquí a Resistência:</label><br>
+                    <input type="text" name="resistência" id="resistencia2"><br><br>
+                    <button onclick="potencia()">Calcular</button><br>
+                    <div id="res2"></div>
+                </div>
+            </section>
+            <section id="sec10">
+                <img id="imgPagina6" src="img/imgPaginas6.png" alt="">
+                <h1 class="titulos" id="title2">Programa para leitura de dados de um sensor analógico, acionando
+saídas digitais.</h1>
+                <div class="conteudo" id="conteudoCode">
+                    <pre>
+const express = require('express')
+const app = express()
+const { SerialPort, ReadlineParser } = require('serialport')
+const readline = require('readline')
+
+const cors = require('cors')
+
+const PORT = 3000   // PORT do protocolo TCP
+const hostname = 'localhost'    // nome do Computador e seu IP = 127.0.0.1 (IP de teste)
+
+const BAUD_RATE = 9600
+const SERIAL_PORT = "COM9"
+
+// ------ config de Middleware ----------
+app.use(express.urlencoded({extended: true}))
+app.use(express.json())
+app.use(cors())
+
+// -------- INICIALIZAÇÃO ARDUINO -------------
+const arduino = new SerialPort({
+    path: SERIAL_PORT,
+    baudRate: BAUD_RATE,
+})
+
+const parserDados = arduino.pipe(new ReadlineParser({delimiter: "\r\n"}))
+
+arduino.on("open", ()=>{
+    console.log(`Conectado ao Arduino em ${SERIAL_PORT}`)
+})
+
+arduino.on("error", (err)=>{
+    console.error('Erro na comunicação serial', err)
+})
+
+// --- parser das linhas: garantir a recepção completa dos dados
+parserDados.on("dados", (dad)=>{
+    const linha = dad.toString().trim()
+
+    if(linha > 0){
+        console.log('Arduino: ',linha)
+    }
+})
+
+// -------- leitura do teclado para testes / troca de dados manuais -----------
+
+const teclado = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+})
+
+teclado.on("line", (input)=>{
+    const comando2 = input.trim()
+
+    if(comando2 === 's' || comando2 === 'd'){
+        arduino.write(comando2, (err)=>{
+            if(err){
+                console.error("Erro ao enviar ocomando pelo teclado: ", err)
+            }else{
+                console.log(`Comando: ${comando2} enviado ao arduino via teclado`)
+            }
+        })
+    }else{
+        console.log("Digite 's' (ligar) ou 'd' (desligar) ")
+    }
+})
+
+// ------- programando as rotas http => endpoints -----
+
+app.get('/ligar', (req,res)=>{
+    arduino.write("s", (err)=>{
+        if(err){
+            console.error("Erro ao escrever no arduino: ", err)
+            return res.status(500).json({ led: "erro", detalhe: "falha ao enviar o comando"})
+        }
+    })
+    res.status(200).json({ led: "ligado"})
+})
+
+app.get('/desligar', (req,res)=>{
+    arduino.write("d", (err)=>{
+        if(err){
+            console.error("Erro ao escrever no arduino: ", err)
+            return res.status(500).json({ led: "erro", detalhe: "falha ao enviar o comando"})
+        }
+    })
+    res.status(200).json({ led: "desligado"})
+})
+
+app.listen(PORT, hostname, ()=>{
+    console.log(`Servidor rodando em ${hostname}:${PORT}`)
+    console.log("Digite 's' para ligar e 'd' para desligar")
+    console.log('-------------------------------------------')
+})</pre>
+                </div>
+            </section>
+            <section id="sec11">
+                <img id="imgPagina8" src="img/imgPaginas8.png" alt="">
+                <h1 class="titulos" id="title7">Entradas e Saídas analógicas</h1>
+                <div class="conteudo" id="conteudo3">
+                    <p>Por fim, vamos esclarecer três dispositivos: o diodo, o diodo LED e o display de 7 segmentos. Um
+                        diodo é um componente semicondutor que permite a passagem de corrente em apenas um sentido. Isso
+                        o torna útil para retificação de corrente (AC → DC), proteção contra polaridade inversa ou como
+                        chave de comutação simples. Já o diodo LED (Light Emitting Diode) é um tipo especial de diodo
+                        que emite luz quando está polarizado na direção direta — isto é, quando a corrente flui no
+                        sentido certo através dele. Esse LED é muito usado como indicador luminoso, em painéis,
+                        iluminação de baixo consumo etc. Por fim, o display de 7 segmentos é um dispositivo de saída
+                        visual composto por sete segmentos (geralmente LEDs ou cristais líquidos) dispostos de forma a
+                        formar dígitos decimais (0-9) ou caracteres simples. Cada segmento pode ser ligado ou desligado
+                        para formar o símbolo desejado.
+                        Esse tipo de display é amplamente usado em relógios digitais, medidores, painéis de
+                        instrumentos, calculadoras simples.</p>
+                </div>
+                <img id="imgPagina9-2" src="img/imgPaginas9.png" alt="">
+                <img id="imgPagina10" class="borderline" src="img/imgPaginas17.png" alt="">
+                <img id="imgPagina11" src="img/imgPaginas11.png" alt="">
+            </section>
         </div>
     </main>
     <footer>

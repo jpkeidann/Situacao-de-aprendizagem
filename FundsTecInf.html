@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
-    <script src="./index.js"defer></script>
-    <title>Situação de aprendizagem</title>
+    <link rel="shortcut icon" href="./img/jcorp.png" type="image/x-icon">
+    <script src="./index.js" defer></script>
+    <script src="./canvas.js" defer></script>
+    <title>Jonas Corporation</title>
 </head>
+
 <body>
     <div id="inicio">
         <header>
@@ -19,13 +22,91 @@
             <button onclick="redirecionar(5)">Lógica de Programação:</button>
             <button onclick="redirecionar(6)">Fundamentos de Tecnologia da Informação:</button>
         </header>
-        <h1>Fundamentos De Tecnologia Da Informação</h1>
-    </div>
-    <main>
-        
-    </main>
-    <footer> 
+        <main>
+            <canvas id="canva"></canvas>
+            <h1 class="H1Paginas">Fundamentos De Tecnologia Da Informação:</h1>
+            <h1 id="SA">S.A</h1>
+            <div class="BlocoDeDecoracao"></div>
+            <p id="DAMN">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+                pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam
+                urna
+                tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada
+                lacinia
+                integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per
+                conubia
+                nostra inceptos himenaeos.
+            </p>
+            <img id="imgPagina" src="./img/imgPaginas1.png" alt="">
+            <div id="content">
+                <section id="sec1">
+                    <img id="imgPagina2" src="./img/imgPaginas2.png" alt=""><br>
+                    <img id="imgPagina3" src="./img/imgPaginas3.png" alt=""><br>
+                    <h1 class="titulos" id="title1">Hardware</h1>
+                    <div class="conteudo" id="conteudo1">
+                        <p>Hardware se refere a todas as partes físicas de um computador — o que você pode tocar — e os
+                            componentes centrais dele incluem a placa-mãe, o processador (CPU) e a memória RAM. A
+                            placa-mãe é a base do sistema: nela todos os componentes internos se conectam para trocar
+                            dados e energia.
+                            O processador funciona como o “cérebro” — ele lê e executa instruções, realiza cálculos e
+                            coordena tudo o que o computador faz.
+                            A memória RAM é uma memória temporária onde o sistema armazena dados e programas em uso para
+                            acesso rápido — ela permite que o computador rode várias tarefas ao mesmo tempo com fluidez;
+                            quando desligamos o PC, os dados da RAM são apagados.</p>
+                    </div>
+                    <img id="imgPagina4" class="borderline" src="img/imgPaginas47.png" alt="">
+                </section>
+                <section id="sec2">
+                    <h1 class="titulos" id="title2">Sistema Operacional</h1>
+                    <img id="imgPagina6" src="img/imgPaginas6.png" alt="">
+                    <div class="conteudo" id="conteudo2">
+                        <p>O sistema operacional (SO) é o software essencial que faz a ponte entre o hardware e os
+                            programas: ele gerencia recursos como CPU, memória, dispositivos de entrada/saída e
+                            armazenamento, e provê interface para o usuário interagir com o computador.
+                            Exemplos comuns de sistemas operacionais são Windows, Linux (diversas distribuições), macOS
+                            e Android — cada um com características diferentes, mas todos cumprem a função de permitir o
+                            uso do hardware e rodar programas.</p>
+                    </div>
+                    <img id="imgPagina7" class="borderline" src="img/imgPaginas48.png" alt="">
+                </section>
+                <section id="sec3">
+                    <img id="imgPagina8" src="img/imgPaginas8.png" alt="">
+                    <h1 class="titulos" id="title3">Sistema de Arquivos</h1>
+                    <div class="conteudo" id="conteudo3">
+                        <p>O sistema de arquivos é a estrutura usada pelo sistema operacional para organizar e armazenar
+                            dados em disco (HD, SSD, pendrives etc.). Ele cuida de nomear arquivos e pastas, decidir
+                            onde os dados ficam armazenados, e permitir leitura, gravação, exclusão e busca de dados de
+                            forma organizada.
+                            Quando usamos o computador no modo texto (em um terminal ou “cmd”), interagimos com o
+                            sistema de arquivos via comandos: navegamos por pastas, listamos arquivos, movemos ou
+                            apagamos itens digitando instruções — o que dá mais controle, especialmente para quem sabe
+                            os comandos. Já em modo gráfico (como num explorador de arquivos), vemos pastas e arquivos
+                            como ícones e janelas, movemos itens com o mouse, clicamos para abrir, etc — interface mais
+                            intuitiva e visual. Essa diferença é apenas na forma de interação; por baixo dos panos,
+                            trata-se do mesmo sistema de arquivos.</p>
+                    </div>
+                    <img id="imgPagina9" src="img/imgPaginas9.png" alt="">
+                    <img id="imgPagina10" class="borderline" src="img/imgPaginas49.png" alt="">
+                    <img id="imgPagina11" src="img/imgPaginas11.png" alt="">
+                </section>
+                <section id="sec4">
+                    <h1 class="titulos" id="title4">Softwares de Escritório</h1>
+                    <div class="conteudo" id="conteudo4">
+                        <p>Softwares de escritório são programas usados para escrita de textos, criação de planilhas,
+                            edição de tabelas, preparação de apresentações e documentos em geral — ferramentas comuns no
+                            dia a dia de estudos, trabalho e escritório. Por exemplo, Microsoft Word é usado para editar
+                            textos e relatórios; Microsoft Excel permite trabalhar com planilhas, cálculos automáticos e
+                            organização de dados; e Microsoft PowerPoint é usado para apresentações com slides. Esses
+                            programas ajudam a organizar informações, automatizar cálculos, formatar documentos e
+                            facilitar comunicação e documentação de ideias e resultados.</p>
+                    </div>
+                    <img id="imgPagina12" class="borderline" src="img/imgPaginas50.png" alt="">
+                    <img id="imgPagina13" src="img/imgPaginas13.png" alt="">
+                </section>
+            </div>
+        </main>
+        <footer>
 
-    </footer>
+        </footer>
 </body>
+
 </html>
