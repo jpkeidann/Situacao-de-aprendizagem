@@ -187,11 +187,15 @@ p {
     border-radius: 25px;
 }
 
-pre{
+pre {
     background-color: #000000;
 }
 
 /*--------------------------------- Section 1 -------------------------------------*/
+
+#sec1 {
+    min-height: 100vh;
+}
 
 #title1 {
     position: relative;
@@ -290,6 +294,7 @@ pre{
 #sec3 {
     position: relative;
     margin-top: 30vh;
+    min-height: 100vh;
 }
 
 #conteudo3 {
@@ -371,6 +376,7 @@ pre{
 #sec5 {
     position: relative;
     margin-top: 20vh;
+    min-height: 100vh;
 }
 
 #imgPagina2-2 {
@@ -404,6 +410,7 @@ pre{
 #sec7 {
     position: relative;
     margin-top: 20vh;
+    min-height: 180vh;
 }
 
 #imgPagina9-2 {
@@ -427,7 +434,7 @@ pre{
 #sec8 {
     position: relative;
     margin-top: 20vh;
-    min-height: 40vh;
+    min-height: 100vh;
 }
 
 /* --------------------------------------- section 9 --------------------------------------------------- */
@@ -451,6 +458,7 @@ pre{
 #sec11 {
     position: relative;
     margin-top: 20vh;
+    min-height: 100vh;
 }
 
 /* --------------------------------------- section 12 --------------------------------------------------- */
@@ -474,6 +482,7 @@ pre{
 #sec14 {
     position: relative;
     margin-top: 20vh;
+    min-height: 100vh;
 }
 
 /* --------------------------------------- section 15 --------------------------------------------------- */
@@ -481,7 +490,7 @@ pre{
 #sec15 {
     position: relative;
     margin-top: 20vh;
-    min-height: 40vh;
+    min-height: 100vh;
 }
 
 /* --------------------------------------- section 15 --------------------------------------------------- */
@@ -494,15 +503,15 @@ pre{
 
 /* ----------------- eletroeletronica -------------------------*/
 
-    #conteudoCode {
-        margin-left: 5vw;
-        width: 80vw;
-        text-align: left;
-    }
+#conteudoCode {
+    margin-left: 5vw;
+    width: 80vw;
+    text-align: left;
+}
 
 /* ----------------- Lógica de computação ------------------------- */
 
-#img{
+#img {
     width: 30vw;
     height: 30vh;
 }
