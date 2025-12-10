@@ -191,6 +191,21 @@ pre {
     background-color: #000000;
 }
 
+.titulos {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: #018fa6;
+    width: 900px;
+}
+
+footer{
+    text-align: center;
+    width: 100vw;
+    height: 30vh;
+    background-color:#015d81; 
+}
+
 /*--------------------------------- Section 1 -------------------------------------*/
 
 #sec1 {
@@ -200,7 +215,7 @@ pre {
 #title1 {
     position: relative;
     margin-top: 25vh;
-    left: 14vw;
+    left: 24vw;
 }
 
 #imgPagina2 {
@@ -220,12 +235,6 @@ pre {
     top: 203vh;
 }
 
-.titulos {
-    font-family: Montserrat;
-    font-weight: bold;
-    font-size: 3.5rem;
-    color: #018fa6;
-}
 
 
 #conteudo1 {
@@ -267,7 +276,7 @@ pre {
 
 #title2 {
     margin-top: 50vh;
-    margin-right: 95vh;
+    margin-left: -10vh;
 }
 
 #conteudo2 {
@@ -293,8 +302,7 @@ pre {
 
 #sec3 {
     position: relative;
-    margin-top: 30vh;
-    min-height: 100vh;
+    min-height: 200vh;
 }
 
 #conteudo3 {
@@ -329,7 +337,6 @@ pre {
 /* --------------------------------- Section 4 ---------------------------------------------*/
 
 #sec4 {
-    margin-top: 20vh;
     min-height: 70vh;
 }
 
@@ -351,7 +358,7 @@ pre {
 #title4 {
     position: relative;
     top: -40vh;
-    left: 4vw;
+    left: 20vw;
     font-size: 300%;
 }
 
@@ -375,7 +382,6 @@ pre {
 
 #sec5 {
     position: relative;
-    margin-top: 20vh;
     min-height: 100vh;
 }
 
@@ -396,12 +402,10 @@ pre {
     top: 43vh;
 }
 
-
 /* --------------------------------------- section 6 -------------------------------------------------- */
 
 #sec6 {
     position: relative;
-    margin-top: 20vh;
     min-height: 100vh;
 }
 
@@ -409,7 +413,6 @@ pre {
 
 #sec7 {
     position: relative;
-    margin-top: 20vh;
     min-height: 180vh;
 }
 
@@ -427,13 +430,13 @@ pre {
     margin-top: 10vh;
     font-size: 300%;
     margin-left: 1vw !important;
+    width: 700px;
 }
 
 /* --------------------------------------- section 8 --------------------------------------------------- */
 
 #sec8 {
     position: relative;
-    margin-top: 20vh;
     min-height: 100vh;
 }
 
@@ -441,7 +444,6 @@ pre {
 
 #sec9 {
     position: relative;
-    margin-top: 20vh;
     min-height: 140vh;
 }
 
@@ -449,7 +451,6 @@ pre {
 
 #sec10 {
     position: relative;
-    margin-top: 20vh;
     min-height: 100vh;
 }
 
@@ -457,7 +458,6 @@ pre {
 
 #sec11 {
     position: relative;
-    margin-top: 20vh;
     min-height: 100vh;
 }
 
@@ -465,7 +465,6 @@ pre {
 
 #sec12 {
     position: relative;
-    margin-top: 20vh;
     min-height: 140vh;
 }
 
@@ -473,23 +472,20 @@ pre {
 
 #sec13 {
     position: relative;
-    margin-top: 20vh;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 /* --------------------------------------- section 14 --------------------------------------------------- */
 
 #sec14 {
     position: relative;
-    margin-top: 20vh;
     min-height: 100vh;
 }
 
 /* --------------------------------------- section 15 --------------------------------------------------- */
 
 #sec15 {
-    position: relative;
-    margin-top: 20vh;
+    position: relative;;
     min-height: 100vh;
 }
 
@@ -497,7 +493,7 @@ pre {
 
 #sec16 {
     position: relative;
-    margin-top: 200vh;
+    margin-top: 80vh;
     min-height: 140vh;
 }
 
@@ -514,4 +510,21 @@ pre {
 #img {
     width: 30vw;
     height: 30vh;
+}
+
+/* ----------------------------- Banco de dados ---------------------------*/
+
+#title3curto{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+    margin-left: 5vw !important;
+}
+
+/* ------------------------------ redes -------------------------------------*/
+
+#title16{
+    position: relative;
+    left: 10vw;
+    font-size: 300%;
 }

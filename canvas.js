@@ -30,7 +30,11 @@ let colorArrIndex = [
 ]
 
 let colorArr = [
-    '#ffffff'
+    '#ffffff',
+    '#f1f1f1ff',
+    '#c0c0c0ff',
+    '#acababff',
+    '#6d6d6dff',
 ]
 
 function Circle(x, y, dx, dy, radius) {
@@ -67,7 +71,7 @@ function Circle(x, y, dx, dy, radius) {
         this.y += this.dy
 
         // interactivity
-        if (mouse.x - this.x < 70 && mouse.x - this.x > -70 && mouse.y - this.y < 70 && mouse.y - this.y > -70 && this.radius < 15) {
+        if (mouse.x - this.x < 70 && mouse.x - this.x > -70 && mouse.y - this.y < 70 && mouse.y - this.y > -70 && this.radius < 20) {
             this.radius += 2;
         } else if (this.radius > 5) {
             this.radius -= 2;
@@ -78,7 +82,7 @@ function Circle(x, y, dx, dy, radius) {
 }
 
 let circleArr = [];
-for (let i = 0; i < 100; i++) {
+for (let i = 0; i < 200; i++) {
     const radius = Math.random() * 10
     var x = Math.random() * canvas.width;
     var y = Math.random() * canvas.height;
