@@ -202,7 +202,7 @@ pre {
 footer{
     text-align: center;
     width: 100vw;
-    height: 30vh;
+    height: 20vh;
     background-color:#015d81; 
 }
 
@@ -223,7 +223,7 @@ footer{
     height: 65vh;
     position: absolute;
     left: 0vw;
-    top: 165vh;
+    top: 125vh;
 }
 
 #imgPagina3 {
@@ -232,7 +232,7 @@ footer{
     height: 145vh;
     position: absolute;
     left: 0vw;
-    top: 203vh;
+    top: 153vh;
 }
 
 
@@ -465,7 +465,7 @@ footer{
 
 #sec12 {
     position: relative;
-    min-height: 140vh;
+    min-height: 100vh;
 }
 
 /* --------------------------------------- section 13 --------------------------------------------------- */
